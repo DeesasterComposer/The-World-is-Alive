@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "theworldisalive",
+  "version": "${version}",
+
+  "name": "The World is Alive",
+  "description": "A mod which adds many new mobs, biomes, and items into the game to make it feel more alive!",
+  "authors": [
+    "Deesaster_"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.deesaster.theworldisalive.TheWorldIsAlive"
+    ]
+  },
+  "mixins": [
+    "theworldisalive.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
